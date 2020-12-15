@@ -2,13 +2,10 @@
 
 DocBox is a JavaDoc-style documentation generator for your CFML codebase. DocBox reads component metadata and structured comments and outputs documentation in an HTML, JSON, or UML (diagram) format. DocBox is a fork of Mark Mandel's original ColdDoc project.
 
-## Supported Formats
+## SYSTEM REQUIREMENTS
 
-DocBox supports several output formats:
-
-* [HTML](output-formats/html.md)
-* [JSON](output-formats/json.md)
-* [UML](output-formats/uml.md)
+- Lucee 5+
+- ColdFusion 2016+
 
 ## Versioning <a id="versioning"></a>
 

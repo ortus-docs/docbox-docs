@@ -3,7 +3,7 @@
 There are several ways you can help in the development of DocBox!
 
 * [Send a pull request](#send-a-pull-request)
-* [Submit a bug or feature request](https://ortussolutions.atlassian.net/projects/DOCBOX)
+* Submit a bug or feature request to our [Jira issue tracker](https://ortussolutions.atlassian.net/projects/DOCBOX)
 * [Write a test](#testing-docbox)
 
 ## Send a Pull Request

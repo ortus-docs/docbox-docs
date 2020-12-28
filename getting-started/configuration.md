@@ -1,6 +1,6 @@
 # Configuration
 
-**Supported Output Formats**
+### **Supported Output Formats**
 
 DocBox offers several built-in output formats as well as enabling you to [create your own](../output-formats/custom-output-strategy.md):
 
@@ -14,6 +14,8 @@ Each format is configured by its alias name, such as `"JSON"` or `"HTML"`.
 var docbox = new docbox.DocBox();
 docbox.addStrategy( "UML", { outputFile : "./tmp/docs/app-diagram.uml" })
 ```
+
+### Backwards Compatibility
 
 For backwards compatibility, specifying the full class path is still supported, as is specifying a single strategy when initializing DocBox:
 
@@ -39,6 +41,8 @@ new docbox.DocBox()
        excludes="(coldbox)"
     );
 ```
+
+### Generating Multiple Outputs
 
 You can call the `.addStrategy()` method multiple times to specify multiple output formats:
 

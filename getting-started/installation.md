@@ -16,10 +16,17 @@ Alternatively, you can download the docbox source code and drop it into a `docbo
 
 ### Mapping
 
-DocBox requires its components to be accessible from the `docbox` location in the application root. If this
+If DocBox is not installed in the root of your application, you will need to create a `docbox` mapping that points to the DocBox source code location:
 
-1. Create a `docbox` mapping that points to the DocBox source code location
-2. Write a CFML script which runs DocBox against your source code.
+```javascript
+this.mappings["docbox"] = expandPath( "./libraries/doctorBox" );
+```
+
+In addition to the Docbox mapping, **you will need a Coldfusion server mapping for each source code location**. For example, documenting a component with `implements="cbsecurity.interfaces.IAuthService"` will require a mapping of `cbsecurity` to the installed`cbsecurity` source code so DocBox can find the referenced interface.
+
+### Using DocBox
+
+The final step to get DocBox running  is to write a CFML script which initializes, configures, and runs DocBox against your application code.
 
 See [Configuration](configuration.md) for more details.
 

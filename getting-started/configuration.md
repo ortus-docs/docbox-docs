@@ -1,17 +1,37 @@
 # Configuration
 
-1. Create a `generateDocs.cfm` CFML script file which will contain the docbox configuration
-2. Edit `generateDocs.cfm` and add CFML which will:
-   1. Create a new instance of `docbox.DocBox`
-   2. Choose an output format - `.addStrategy( "HTML" )`
-   3. Pass strategy parameters - `addStrategy( "HTML", { outputDir : 'tmp/docs' } )`
-   4. Run Docbox: `.generate()`
+**Supported Output Formats**
+
+DocBox offers several built-in output formats as well as enabling you to [create your own](../output-formats/custom-output-strategy.md):
+
+* [HTML](output-formats/html.md)
+* [JSON](output-formats/json.md)
+* [UML](output-formats/uml.md)
+
+Each format is configured by its alias name, such as `"JSON"` or `"HTML"`.
+
+```javascript
+var docbox = new docbox.DocBox();
+docbox.addStrategy( "UML", { outputFile : "./tmp/docs/app-diagram.uml" })
+```
+
+For backwards compatibility, specifying the full class path is still supported, as is specifying a single strategy when initializing DocBox:
+
+```javascript
+variables.docbox = new docbox.DocBox(
+  strategy = "docbox.strategy.uml2tools.XMIStrategy",
+  properties={ 
+    projectTitle = "DocBox Tests",
+    outputFile   = variables.testOutputFile
+  }
+);
+```
 
 ```javascript
 new docbox.DocBox()
     .addStrategy( "HTML", {
         projectTitle : "CommandBox",
-        outputDir : "#expandPath( './docs' )#
+        outputDir : expandPath( './docs' )
     } )
     .generate(
        source = expandPath( "/app" ),
@@ -20,7 +40,7 @@ new docbox.DocBox()
     );
 ```
 
-You can generate multiple formats simultaneously with the `.addStrategy()` method:
+You can call the `.addStrategy()` method multiple times to specify multiple output formats:
 
 ```javascript
 new docbox.DocBox()

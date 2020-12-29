@@ -1,3 +1,9 @@
+---
+description: >-
+  Generate JSON output for easy documentation imports into other documentation
+  tools and platforms.
+---
+
 # JSON Output
 
 ## Schema

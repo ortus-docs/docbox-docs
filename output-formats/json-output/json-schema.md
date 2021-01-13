@@ -1,22 +1,20 @@
 ---
-description: >-
-  Generate JSON output for easy documentation imports into other documentation
-  tools and platforms.
+description: Understanding the output format of the DocBox JSON strategy
 ---
 
-# JSON Output
-
-## Schema
+# JSON Schema
 
 The JSON strategy outputs three types of files:
 
-* Overview Summary
-* Package Summary
-* Class Documentation
+* [Overview Summary](json-schema.md#overview-summary)
+* [Package Summary](json-schema.md#package-summary)
+* [Class Documentation](json-schema.md#class-documentation)
 
 ## Overview Summary
 
 DocBox's JSON strategy outputs a single `overview-summary.json` file in the root of the configured `outputDir` directory that documents all packages \(component directories\) and classes in the configured `source`.
+
+This `overview-summary.json` file will match the following schema:
 
 ```javascript
 {
@@ -70,6 +68,8 @@ DocBox's JSON strategy outputs a `package-summary.json` file for every directory
 
 * `source/autos/autoBuilder.cfc` will generate a `docs/source/autos/package-summary.json`
 
+This `package-summary.json` file will match the following schema:
+
 ```javascript
 {
     "$id": "point-to-public-json-schema.json",
@@ -111,7 +111,7 @@ The name of the file will reflect the component name, and the location will matc
 * `source/app/autos/autoBuilder.cfc` becomes `docs/source/app/autos/autoBuilder.json`
 * `source/main.cfc` becomes `docs/source/main.json`
 
-The component documentation will match this schema:
+Each component documentation file will match the following schema:
 
 ```javascript
 {

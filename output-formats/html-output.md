@@ -4,7 +4,7 @@ description: Generate browsable HTML documentation for your application CFCs
 
 # HTML Output
 
-The HTML API Strategy is used to create CFC documentation based on [Javadoc](http://java.sun.com/j2se/javadoc/). DocBox does not fully support all the Javadoc syntax, but hopefully it will soon.
+The HTML API Strategy is used to create CFC documentation based on [Javadoc](https://www.oracle.com/java/technologies/javase/javadoc-tool.html). DocBox does not fully support all the Javadoc syntax, but hopefully it will soon.
 
 ## Instantiate DocBox
 

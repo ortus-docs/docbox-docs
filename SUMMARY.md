@@ -6,6 +6,7 @@
 
 * [Installation](getting-started/installation.md)
 * [Configuration](getting-started/configuration.md)
+* [Annotating Your Code](getting-started/annotating-your-code.md)
 
 ## Output Formats
 

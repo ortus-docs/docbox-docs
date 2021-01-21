@@ -1,7 +1,7 @@
 ---
 description: >-
-  DocBox is a JavaDoc-style documentation generator for your CFML codebase based
-  on Mark Mandel's ColdDoc project.
+  DocBox is a JavaDoc-style documentation generator for your ColdFusion (CFML)
+  codebase
 ---
 
 # Introduction
@@ -11,7 +11,7 @@ DocBox reads component metadata and structured comments and outputs documentatio
 ## SYSTEM REQUIREMENTS
 
 * Lucee 5+
-* ColdFusion 2016+
+* Adobe ColdFusion 2016+
 
 ## Versioning <a id="versioning"></a>
 
@@ -33,8 +33,9 @@ Apache 2 License: [http://www.apache.org/licenses/LICENSE-2.0](https://www.apach
 
 ## Important Links <a id="important-links"></a>
 
-* Code: [https://github.com/coldbox-modules/cbsecurity](https://github.com/coldbox-modules/cbsecurity)​
-* Issues: [https://github.com/coldbox-modules/cbsecurity/issues](https://github.com/coldbox-modules/cbsecurity/issues)
+* Code: [https://github.com/ortus-solutions/docbox](https://github.com/ortus-solutions/docbox)​
+* Issues: [https://ortussolutions.atlassian.net/jira/software/c/projects/DOCBOX/issues/](https://ortussolutions.atlassian.net/jira/software/c/projects/DOCBOX/issues/)
+* Community: [https://community.ortussolutions.com/](https://community.ortussolutions.com/)
 
 ## Professional Open Source <a id="professional-open-source"></a>
 

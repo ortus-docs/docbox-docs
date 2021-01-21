@@ -15,7 +15,7 @@ var docbox = new docbox.DocBox();
 docbox.addStrategy( "UML", { outputFile : "./tmp/docs/app-diagram.uml" })
 ```
 
-### Backwards Compatibilitysend-a-pull-request
+### Backwards Compatibility
 
 For backwards compatibility, specifying the full class path is still supported, as is specifying a single strategy when initializing DocBox:
 

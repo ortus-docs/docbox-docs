@@ -12,14 +12,14 @@ Installing and using DocBox consists of three main steps:
 
 For best results, use [CommandBox](https://commandbox.ortusbooks.com/) to run `box install docbox --saveDev` in your app root.
 
-Alternatively, you can download the docbox source code and drop it into a `docbox` folder in your application.
+Alternatively, you can download the DocBox source code and drop it into a `docbox` folder in your application.
 
 ### Mapping
 
 If DocBox is not installed in the root of your application, you will need to create a `docbox` mapping that points to the DocBox source code location:
 
 ```javascript
-this.mappings["docbox"] = expandPath( "./libraries/doctorBox" );
+this.mappings[ "docbox" ] = expandPath( "./libraries/doctorBox" );
 ```
 
 In addition to the Docbox mapping, **you will need a Coldfusion server mapping for each source code location**. For example, documenting a component with `implements="cbsecurity.interfaces.IAuthService"` will require a mapping of `cbsecurity` to the installed`cbsecurity` source code so DocBox can find the referenced interface.

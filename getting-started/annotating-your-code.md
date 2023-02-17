@@ -18,7 +18,7 @@ These comments are commonly made up of two sections:
 * The standalone block tags \(marked with the `@` symbol\) which describe specific meta-data
 * Also all core engine attributes to components, properties, functions and arguments will be documented automatically for you.
 
-For the full JavDoc spec click here: [https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
+For the full JavaDoc spec click here: [https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
 
 ## DocBox at the CFC Level
 

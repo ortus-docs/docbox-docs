@@ -1,5 +1,5 @@
 ---
-description: 'Just use CommandBox! No, really.'
+description: Just use CommandBox! No, really.
 ---
 
 # Installation
@@ -26,17 +26,16 @@ In addition to the Docbox mapping, **you will need a Coldfusion server mapping f
 
 ### Using DocBox
 
-The final step to get DocBox running  is to write a CFML script which initializes, configures, and runs DocBox against your application code.
+The final step to get DocBox running is to write a CFML script that initializes, configures, and runs DocBox against your application code.
 
 See [Configuration](configuration.md) for more details.
 
 ## Using DocBox from the Command Line
 
-We also have a CommandBox module called [DocBox Commands ](https://forgebox.io/view/commandbox-docbox)which enables generating documentation from the CLI.
+We also have a CommandBox module called [DocBox Commands, ](https://forgebox.io/view/commandbox-docbox)which enables generating documentation from the CLI.
 
 1. Run `box install commandbox-docbox` to install the `docbox` command namespace
 2. Run `docbox help` to get a list of commands
 3. Run `docbox generate help` to show help for the `docbox generate` command
 
 Please see the [DocBox Commands README](https://github.com/Ortus-Solutions/commandbox-docbox/blob/development/README.md) for more info.
-

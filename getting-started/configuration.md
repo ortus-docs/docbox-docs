@@ -4,9 +4,9 @@
 
 DocBox offers several built-in output formats as well as enabling you to [create your own](../output-formats/custom-output-strategy.md):
 
-* [HTML](output-formats/html.md)
-* [JSON](output-formats/json.md)
-* [UML](output-formats/uml.md)
+* [HTML](https://app.gitbook.com/s/-MO7676VkvjpkgbE8J5a/getting-started/output-formats/html.md)
+* [JSON](https://app.gitbook.com/s/-MO7676VkvjpkgbE8J5a/getting-started/output-formats/json.md)
+* [UML](https://app.gitbook.com/s/-MO7676VkvjpkgbE8J5a/getting-started/output-formats/uml.md)
 
 Each format is configured by its alias name, such as `"JSON"` or `"HTML"`.
 
@@ -62,4 +62,3 @@ new docbox.DocBox()
       excludes="(coldbox)"
    );
 ```
-

@@ -1,6 +1,10 @@
 # Table of contents
 
 * [Introduction](README.md)
+  * [Release History](readme/release-history/README.md)
+    * [What's New With 4.1.0](readme/release-history/whats-new-with-4.1.0.md)
+    * [What's New With 4.0.0](readme/release-history/whats-new-with-4.0.0.md)
+  * [Contributing](readme/contributing.md)
 
 ## Getting Started
 
@@ -15,8 +19,3 @@
   * [JSON Schema](output-formats/json-output/json-schema.md)
 * [UML Output](output-formats/uml-output.md)
 * [Custom Output](output-formats/custom-output-strategy.md)
-
----
-
-* [Contributing](contributing.md)
-

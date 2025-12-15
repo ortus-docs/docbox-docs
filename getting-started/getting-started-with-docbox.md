@@ -1,12 +1,12 @@
 # Getting Started with DocBox
 
-## Quick Start Guide
+## 🚀 Quick Start Guide
 
-1. [Installation](installation.md) - Install via CommandBox or BoxLang
-2. [Configuration](configuration.md) - Set up output strategies and options
-3. [Annotating Your Code](annotating-your-code.md) - Add JavaDoc-style comments
+1. 📦 [Installation](installation.md) - Install via CommandBox or BoxLang
+2. ⚙️ [Configuration](configuration.md) - Set up output strategies and options
+3. 📝 [Annotating Your Code](annotating-your-code.md) - Add JavaDoc-style comments
 
-## What's New in 5.0
+## ✨ What's New in 5.0
 
 DocBox 5.0 is a major release with significant improvements:
 
@@ -18,13 +18,13 @@ DocBox 5.0 is a major release with significant improvements:
 
 See [What's New With 5.0.0](../readme/release-history/whats-new-with-5.0.0.md) for complete details.
 
-## Supported Output Formats
+## 📊 Supported Output Formats
 
 DocBox supports several output formats:
 
-* [HTML Output](../output-formats/html-output.md) - Modern browsable documentation with two themes
-* [JSON Output](../output-formats/json-output/README.md) - Machine-readable JSON format
-* [UML Output](../output-formats/uml-output.md) - XMI/UML diagram generation
+* 🌐 [HTML Output](../output-formats/html-output.md) - Modern browsable documentation with two themes
+* 📋 [JSON Output](../output-formats/json-output/README.md) - Machine-readable JSON format
+* 📐 [UML Output](../output-formats/uml-output.md) - XMI/UML diagram generation
 
 Each format is configured by its alias name, such as `"JSON"` or `"HTML"`.
 
@@ -37,9 +37,9 @@ docbox.addStrategy( "HTML", {
 })
 ```
 
-## Quick Example
+## 💡 Quick Examples
 
-### Using BoxLang CLI (New in 5.0)
+### 🥊 Using BoxLang CLI (New in 5.0)
 
 ```bash
 boxlang module:docbox --source=/path/to/code \
@@ -48,7 +48,7 @@ boxlang module:docbox --source=/path/to/code \
                        --project-title="My API"
 ```
 
-### Using CFML
+### 💎 Using CFML
 
 ```javascript
 new docbox.DocBox()

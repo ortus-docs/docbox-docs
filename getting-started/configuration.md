@@ -1,12 +1,12 @@
 # Configuration
 
-## Supported Output Formats
+## 📊 Supported Output Formats
 
 DocBox offers several built-in output formats as well as enabling you to [create your own](../output-formats/custom-output-strategy.md):
 
-* [HTML](../output-formats/html-output.md) - Modern HTML documentation with two theme options
-* [JSON](../output-formats/json-output/README.md) - Machine-readable JSON format
-* [UML](../output-formats/uml-output.md) - XMI/UML diagram generation
+* 🌐 [HTML](../output-formats/html-output.md) - Modern HTML documentation with two theme options
+* 📋 [JSON](../output-formats/json-output/README.md) - Machine-readable JSON format
+* 📐 [UML](../output-formats/uml-output.md) - XMI/UML diagram generation
 
 Each format is configured by its alias name, such as `"JSON"`, `"HTML"`, or `"XMI"`.
 
@@ -15,9 +15,9 @@ var docbox = new docbox.DocBox();
 docbox.addStrategy( "UML", { outputFile : "./tmp/docs/app-diagram.uml" })
 ```
 
-## Basic Configuration
+## ⚙️ Basic Configuration
 
-### Single Strategy
+### 🎯 Single Strategy
 
 ```javascript
 new docbox.DocBox()
@@ -33,7 +33,7 @@ new docbox.DocBox()
     );
 ```
 
-### Multiple Strategies
+### 🔄 Multiple Strategies
 
 You can call the `.addStrategy()` method multiple times to generate multiple output formats:
 
@@ -58,7 +58,7 @@ new docbox.DocBox()
     );
 ```
 
-## HTML Strategy Options (New in 5.0)
+## 🎨 HTML Strategy Options (New in 5.0)
 
 The HTML strategy now supports theme selection:
 
@@ -78,24 +78,24 @@ docbox.addStrategy( "HTML", {
 } );
 ```
 
-### Theme Features
+### ✨ Theme Features
 
 **Default Theme:**
-* Alpine.js SPA architecture
-* Dark mode toggle with persistence
-* Real-time method search
-* Tabbed method summaries
-* Modern purple gradient design
-* Bootstrap 5 components
+* ⚡ Alpine.js SPA architecture
+* 🌓 Dark mode toggle with persistence
+* 🔍 Real-time method search
+* 📑 Tabbed method summaries
+* 💜 Modern purple gradient design
+* 🎯 Bootstrap 5 components
 
 **Frames Theme:**
-* Traditional three-panel frameset
-* Left sidebar navigation
-* Bootstrap 5 styling
-* Dark mode support
-* Classic documentation UX
+* 📱 Traditional three-panel frameset
+* 🗂️ Left sidebar navigation
+* 🎨 Bootstrap 5 styling
+* 🌓 Dark mode support
+* 📚 Classic documentation UX
 
-## Generate Method Parameters
+## 🔧 Generate Method Parameters
 
 The `generate()` method accepts the following parameters:
 
@@ -103,7 +103,7 @@ The `generate()` method accepts the following parameters:
 * `mapping` : The base mapping for the folder source (used only if `source` is a path)
 * `excludes` : A regular expression that will be evaluated against all CFCs. If the regex matches the CFC name and path, the CFC will be excluded
 
-### Single Source
+### 📁 Single Source
 
 ```javascript
 docbox.generate(
@@ -113,7 +113,7 @@ docbox.generate(
 );
 ```
 
-### Multiple Sources
+### 📂 Multiple Sources
 
 ```javascript
 docbox.generate(
@@ -126,7 +126,7 @@ docbox.generate(
 );
 ```
 
-## BoxLang CLI Usage (New in 5.0)
+## 🥊 BoxLang CLI Usage (New in 5.0)
 
 DocBox 5.0 includes a native BoxLang CLI module:
 
@@ -152,7 +152,7 @@ boxlang module:docbox --mappings:models=/app/models \
 
 See `boxlang module:docbox --help` for complete CLI documentation.
 
-## Backwards Compatibility
+## ♻️ Backwards Compatibility
 
 For backwards compatibility, specifying the full class path is still supported, as is specifying a single strategy when initializing DocBox:
 

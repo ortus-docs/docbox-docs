@@ -1,8 +1,8 @@
 # Annotating Your Code
 
-DocBox reads your CFCs and creates documentation according to your objects, inheritance, implementations, functions, arguments, comments and metadata.  We try to follow the [JavaDoc](https://www.oracle.com/java/technologies/javase/javadoc-tool.html) style of annotations even though it is not 100% compatible yet.
+📝 DocBox reads your CFCs and creates documentation according to your objects, inheritance, implementations, functions, arguments, comments and metadata.  We try to follow the [JavaDoc](https://www.oracle.com/java/technologies/javase/javadoc-tool.html) style of annotations even though it is not 100% compatible yet.
 
-## DocBox Comments
+## 💬 DocBox Comments
 
 DocBox comments may be placed above any CFC, property, function, or argument which we want to document.
 
@@ -20,14 +20,14 @@ These comments are commonly made up of two sections:
 
 For the full JavaDoc spec click here: [https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html)
 
-## DocBox at the CFC Level
+## 📚 DocBox at the CFC Level
 
 ```java
 /**
 * Hero is the main entity we'll be using to create awesome stuff
-* 
+*
 * @author Captain America
-* 
+*
 */
 component name="SuperHero" accessors="true" transient{
     // properties and functions
@@ -36,9 +36,7 @@ component name="SuperHero" accessors="true" transient{
 
 This is a simple component declaration where we define the hint for the component and add block tags like `@author` .  All attributes to the component will be documented for you as name-value pairs on the final output.
 
-## DocBox at the Property Level
-
-```java
+## 🎯 DocBox at the Property Level```java
 /**
 * Hero is the main entity we'll be using to create awesome stuff
 * 

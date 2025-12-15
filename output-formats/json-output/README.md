@@ -6,7 +6,9 @@ description: >-
 
 # JSON Output
 
-## Instantiate DocBox
+📋 Generate machine-readable JSON documentation for easy imports into other documentation tools and platforms.
+
+## 🚀 Instantiate DocBox
 
 Begin by creating an instance of `DocBox`:
 
@@ -14,7 +16,7 @@ Begin by creating an instance of `DocBox`:
 docbox = new DocBox();
 ```
 
-### Properties
+### ⚙️ Properties
 
 The following are the properties for this strategy:
 
@@ -32,7 +34,7 @@ docbox.addStrategy( "JSON",
   } );
 ```
 
-## Generate Documentation
+## 📝 Generate Documentation
 
 Now that you have an instance of DocBox configured with your strategy and its properties, just execute the `generate()` method with its appropriate arguments:
 

@@ -32,7 +32,42 @@ See [Configuration](configuration.md) for more details.
 
 ## Using DocBox from the Command Line
 
-We also have a CommandBox module called [DocBox Commands, ](https://forgebox.io/view/commandbox-docbox)which enables generating documentation from the CLI.
+We offer multiple ways to use DocBox from the command line:
+
+### BoxLang CLI Module (New in 5.0)
+
+DocBox now includes a native BoxLang CLI module for generating documentation:
+
+```bash
+# Basic usage
+boxlang module:docbox --source=/path/to/code --mapping=myapp --output-dir=/docs
+
+# With project title and excludes
+boxlang module:docbox --source=/src --mapping=myapp \
+                       --excludes="(tests|build)" \
+                       --output-dir=/docs \
+                       --project-title="My API"
+
+# Multiple source mappings
+boxlang module:docbox --mappings:v1=/src/v1/models \
+                       --mappings:v2=/src/v2/models \
+                       --output-dir=/docs
+
+# Using frames theme
+boxlang module:docbox --source=/src --mapping=app \
+                       --output-dir=/docs \
+                       --theme=frames
+
+# Show help
+boxlang module:docbox --help
+
+# Show version
+boxlang module:docbox --version
+```
+
+### CommandBox Module
+
+We also have a CommandBox module called [DocBox Commands](https://forgebox.io/view/commandbox-docbox), which enables generating documentation from the CLI.
 
 1. Run `box install commandbox-docbox` to install the `docbox` command namespace
 2. Run `docbox help` to get a list of commands

@@ -4,6 +4,24 @@ description: Just use CommandBox! No, really.
 
 # Installation
 
+## 🦤 BoxLang Module Installation (Recommended for CLI)
+
+DocBox 5.0+ can be installed as a native BoxLang core module, providing access to the powerful CLI tool.
+
+### CommandBox Web Runtimes
+
+```bash
+box install bx-docbox
+```
+
+### BoxLang OS Runtime
+
+```bash
+install-bx-module bx-docbox
+```
+
+Once installed, you can use the `boxlang module:docbox` CLI command to generate documentation. See the [BoxLang CLI Tool](boxlang-cli.md) page for complete usage details and examples.
+
 ## Using DocBox in a Standalone Application
 
 Installing and using DocBox consists of three main steps:

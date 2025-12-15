@@ -10,6 +10,7 @@
 ## Getting Started
 
 * [Installation](getting-started/installation.md)
+* [BoxLang CLI Tool](getting-started/boxlang-cli.md)
 * [Configuration](getting-started/configuration.md)
 * [Annotating Your Code](getting-started/annotating-your-code.md)
 

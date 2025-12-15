@@ -2,9 +2,10 @@
 
 ## 🚀 Quick Start Guide
 
-1. 📦 [Installation](installation.md) - Install via CommandBox or BoxLang
-2. ⚙️ [Configuration](configuration.md) - Set up output strategies and options
-3. 📝 [Annotating Your Code](annotating-your-code.md) - Add JavaDoc-style comments
+1. 📦 [Installation](installation.md) - Install as BoxLang module or CommandBox package
+2. 🦤 [BoxLang CLI Tool](boxlang-cli.md) - Use the command-line interface (recommended)
+3. ⚙️ [Configuration](configuration.md) - Set up output strategies and options (programmatic use)
+4. 📝 [Annotating Your Code](annotating-your-code.md) - Add JavaDoc-style comments
 
 ## ✨ What's New in 5.0
 
@@ -41,12 +42,26 @@ docbox.addStrategy( "HTML", {
 
 ### 🥊 Using BoxLang CLI (New in 5.0)
 
+First, install the BoxLang module:
+
+```bash
+# CommandBox web runtimes
+box install bx-docbox
+
+# BoxLang OS runtime
+install-bx-module bx-docbox
+```
+
+Then generate documentation:
+
 ```bash
 boxlang module:docbox --source=/path/to/code \
                        --mapping=myapp \
                        --output-dir=/docs \
                        --project-title="My API"
 ```
+
+See the [BoxLang CLI Tool](boxlang-cli.md) page for more examples and options.
 
 ### 💎 Using CFML
 

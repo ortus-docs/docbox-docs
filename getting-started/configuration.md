@@ -159,7 +159,7 @@ For backwards compatibility, specifying the full class path is still supported, 
 ```javascript
 variables.docbox = new docbox.DocBox(
     strategy   = "docbox.strategy.uml2tools.XMIStrategy",
-    properties = { 
+    properties = {
         projectTitle : "DocBox Tests",
         outputFile   : variables.testOutputFile
     }

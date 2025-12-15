@@ -30,7 +30,7 @@ Each format is configured by its alias name, such as `"JSON"` or `"HTML"`.
 
 ```javascript
 var docbox = new docbox.DocBox();
-docbox.addStrategy( "HTML", { 
+docbox.addStrategy( "HTML", {
     projectTitle : "My API",
     outputDir    : "./docs",
     theme        : "default"  // or "frames"
@@ -87,7 +87,7 @@ For backwards compatibility, specifying the full class path is still supported, 
 ```javascript
 variables.docbox = new docbox.DocBox(
   strategy = "docbox.strategy.uml2tools.XMIStrategy",
-  properties={ 
+  properties={
     projectTitle = "DocBox Tests",
     outputFile   = variables.testOutputFile
   }
@@ -102,7 +102,7 @@ In addition to the mainstream output formats, you can extend DocBox's `AbstractT
 component extends="docbox.strategy.AbstractTemplateStrategy" accessors="true"{
     /**
      * Generate custom documentation
-     * 
+     *
      * @metadata All component metadata, sourced from DocBox.
      */
     component function run( required query metadata ){
@@ -110,4 +110,3 @@ component extends="docbox.strategy.AbstractTemplateStrategy" accessors="true"{
     }
 }
 ```
-

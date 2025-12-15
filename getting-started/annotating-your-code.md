@@ -39,17 +39,17 @@ This is a simple component declaration where we define the hint for the componen
 ## 🎯 DocBox at the Property Level```java
 /**
 * Hero is the main entity we'll be using to create awesome stuff
-* 
+*
 * @author Captain America
-* 
+*
 */
 component name="SuperHero" accessors="true" transient{
-    
+
     /**
      * A collection of aliases this superhero is known as
      */
     property name="alias" type="array";
-    
+
     /**
      * Internal alias name
      * @deprecated true
@@ -58,7 +58,7 @@ component name="SuperHero" accessors="true" transient{
 }
 ```
 
-Properties also have comments and you can add `@` blocks as well. 
+Properties also have comments and you can add `@` blocks as well.
 
 ## DocBox at the Function Level
 
@@ -132,7 +132,7 @@ component doc_abstract { ... }
 
 /**
  * Get foo array
- * 
+ *
  * @doc_generic com.Foo
  */
 private array function getFooArray(){
@@ -154,8 +154,8 @@ private void function setMyStruct( required struct myStruct ){
 }
 
 // Inline
-private void function setMyStruct( 
-  required struct myStruct doc_generic="uuid,string" 
+private void function setMyStruct(
+  required struct myStruct doc_generic="uuid,string"
 ){
   instance.myStruct = arguments.myStruct;
 }
@@ -169,6 +169,3 @@ All of the ortus repos have all their CFC documented.  Please check out some of 
 * [https://github.com/coldbox/coldbox-platform](https://github.com/coldbox/coldbox-platform)
 * [https://github.com/Ortus-Solutions/commandbox](https://github.com/Ortus-Solutions/commandbox)
 * [https://github.com/Ortus-Solutions/ContentBox](https://github.com/Ortus-Solutions/ContentBox)
-
-
-

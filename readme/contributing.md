@@ -22,4 +22,3 @@ DocBox has a suite of Testbox specs validating that it works as expected. New fe
 2. Run `box start` to boot a test server
 3. Run `box testbox run` to run the suite of DocBox tests.
 4. Edit test specs in `tests/specs` as necessary, and run `box testbox run` again to validate tests pass.
-

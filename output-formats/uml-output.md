@@ -26,7 +26,7 @@ To get started, you need to download and install the Eclipe plugin UML2 Tools in
 6. Enter the name _UML2 Tools_ in _Name_
 7. Click _Archive_ and select the .zip file you downloaded.
 
-   1 .  Click _OK_, and continue through the installation process  
+   1 .  Click _OK_, and continue through the installation process
 
 Once that process is complete, the Eclipse UML2 Tools plugin should now be installed and working.
 
@@ -42,7 +42,7 @@ This will generate the `.uml` \(in this case `docbox.uml`\) file which we can th
 
 To view and edit the UML diagrams from here:
 
-1. Browse to the .uml file that you generated in the _Navigator_ Pane     
+1. Browse to the .uml file that you generated in the _Navigator_ Pane
 2. Right click on the .uml file
 3. Select _Initialise Class Diagram_
 4. Select the root package that you wish to model
@@ -57,6 +57,5 @@ There are other types of UML2 diagrams that can be created. Have a look at the U
 There are some assumptions that are made by this strategy, when converting from CFCs to UML diagrams, as some meta data on CFCS are not provided and/or cannot be specified.
 
 * A property/field is determined for a class when a _get_ and _set_ function exist with the same name \(or _set_ and _is_ for boolean values\) and the argument type of the _set_ function matches the return type of the _get_/_is_ function.
-* The scope for the property/field is selected by highest level of exposure between the _getÂ_ and _set_ functions. I.e. if _getFoo\(\)_ is public, and _setFoo\(\)_ is private, then the property _foo_ is marked as public.     
+* The scope for the property/field is selected by highest level of exposure between the _getÂ_ and _set_ functions. I.e. if _getFoo\(\)_ is public, and _setFoo\(\)_ is private, then the property _foo_ is marked as public.
 * All associations are of type _aggregation_, rather than _composition_
-

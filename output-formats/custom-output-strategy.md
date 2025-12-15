@@ -6,7 +6,7 @@
 component extends="docbox.strategy.AbstractTemplateStrategy" accessors="true"{
    /**
     * Generate JSON documentation
-    * 
+    *
     * @metadata All component metadata, sourced from DocBox.
     */
    component function run( required query metadata ){
@@ -14,6 +14,3 @@ component extends="docbox.strategy.AbstractTemplateStrategy" accessors="true"{
    }
 }
 ```
-
-
-

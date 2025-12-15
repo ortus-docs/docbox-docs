@@ -30,7 +30,7 @@ docbox = new DocBox();
 docbox.addStrategy( "JSON",
   {
       projectTitle = "DocBox API",
-      outputDir = expandPath( "/resources/tmp" )  
+      outputDir = expandPath( "/resources/tmp" )
   } );
 ```
 
@@ -45,4 +45,3 @@ docbox.generate(
     excludes = "tests"
 );
 ```
-

@@ -6,7 +6,7 @@
 
 * Minimum CFML engine requirements updated:
   * Lucee 5.x minimum (dropped Lucee 4.x)
-  * Adobe ColdFusion 2018+ (dropped ACF 2016, 2018)
+  * Adobe ColdFusion 2023+ (dropped ACF 2016, 2018, 2021)
 * HTML output now uses Bootstrap 5 (previously Bootstrap 3)
 * Default theme structure reorganized with new Alpine.js-based SPA architecture
 

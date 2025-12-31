@@ -101,7 +101,7 @@ The `generate()` method accepts the following parameters:
 
 * `source` : A path to the source location or an array of structs of locations that must have a `dir` and `mapping` key
 * `mapping` : The base mapping for the folder source (used only if `source` is a path)
-* `excludes` : A regular expression that will be evaluated against all CFCs. If the regex matches the CFC name and path, the CFC will be excluded
+* `excludes` : A regular expression that will be evaluated against all classes. If the regex matches the class name and path, the class will be excluded
 
 ### 📁 Single Source
 

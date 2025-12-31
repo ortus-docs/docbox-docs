@@ -12,7 +12,7 @@ description: >-
 
 * BoxLang 1.0+
 * Lucee 5+
-* Adobe ColdFusion 2018+
+* Adobe ColdFusion 2023+
 
 ## 🔢 Versioning <a href="#versioning" id="versioning"></a>
 

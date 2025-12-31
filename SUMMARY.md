@@ -13,6 +13,7 @@
 * [BoxLang CLI Tool](getting-started/boxlang-cli.md)
 * [Configuration](getting-started/configuration.md)
 * [Annotating Your Code](getting-started/annotating-your-code.md)
+* [Troubleshooting](getting-started/troubleshooting.md)
 
 ## Output Formats
 
@@ -20,4 +21,9 @@
 * [JSON Output](output-formats/json-output/README.md)
   * [JSON Schema](output-formats/json-output/json-schema.md)
 * [UML Output](output-formats/uml-output.md)
+* [CommandBox Output](output-formats/commandbox-output.md)
 * [Custom Output](output-formats/custom-output-strategy.md)
+
+## Advanced
+
+* [API Reference](advanced/api-reference.md)

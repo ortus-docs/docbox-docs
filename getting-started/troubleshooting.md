@@ -353,14 +353,14 @@ try {
         .addStrategy( "HTML", {
             outputDir: expandPath( "/docs" )
         } );
-    
+
     writeDump( "Starting documentation generation..." );
-    
+
     docbox.generate(
         source: expandPath( "/src" ),
         mapping: "app"
     );
-    
+
     writeDump( "Generation complete!" );
 } catch ( any e ) {
     writeDump( var=e, label="DocBox Error" );

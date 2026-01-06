@@ -1,3 +1,8 @@
+---
+description: Create your own custom output format by extending DocBox's strategy system.
+icon: code
+---
+
 # Custom Output
 
 🛠️ In addition to the mainstream output formats, you can extend DocBox's `AbstractTemplateStrategy` class to generate your own which implements the `IStrategy` class.

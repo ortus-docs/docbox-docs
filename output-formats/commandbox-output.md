@@ -1,5 +1,6 @@
 ---
 description: Generate CommandBox CLI command documentation with namespace organization
+icon: terminal
 ---
 
 # CommandBox Output

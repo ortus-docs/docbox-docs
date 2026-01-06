@@ -1,5 +1,6 @@
 ---
 description: Generate browsable HTML documentation for your application Classes
+icon: globe
 ---
 
 # HTML Output

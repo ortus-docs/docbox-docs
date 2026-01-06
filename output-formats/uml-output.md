@@ -1,5 +1,6 @@
 ---
 description: Generate an XML file for graphing your application via Eclipse UML2Tools
+icon: diagram-nested
 ---
 
 # UML Output

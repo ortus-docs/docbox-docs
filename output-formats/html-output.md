@@ -13,6 +13,8 @@ DocBox 5.0 introduces a completely redesigned HTML output with two professional 
 
 ### ⚡ Default Theme - Modern SPA
 
+<figure><img src="../.gitbook/assets/docbox-overview.png" alt=""><figcaption></figcaption></figure>
+
 The default theme features:
 
 * **Alpine.js-based SPA** - Client-side routing and dynamic filtering
@@ -24,6 +26,8 @@ The default theme features:
 * **✨ Smooth Scrolling** - Enhanced navigation experience
 
 ### 📚 Frames Theme - Traditional Layout
+
+<figure><img src="../.gitbook/assets/docbox-frames.png" alt=""><figcaption></figcaption></figure>
 
 The frames theme provides:
 
@@ -46,6 +50,7 @@ docbox = new DocBox();
 The following are the properties for this strategy:
 
 * `projectTitle` : The HTML title used in the documentation
+* `projectDescription` : The HTML project description
 * `outputDir` : The output directory absolute path
 * `theme` : (Optional) Theme name - `"default"` or `"frames"` (defaults to `"default"`)
 

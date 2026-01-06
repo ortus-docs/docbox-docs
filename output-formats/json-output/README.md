@@ -2,7 +2,7 @@
 description: >-
   Generate JSON output for easy documentation imports into other documentation
   tools and platforms.
-icon: file-brackets-curly
+icon: cloud-binary
 ---
 
 # JSON Output

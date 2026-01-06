@@ -1,12 +1,15 @@
 ---
 description: >-
-  DocBox is a JavaDoc-style documentation generator for your BoxLang and CFML Applications.
+  DocBox is a JavaDoc-style documentation generator for your BoxLang and CFML
+  Applications.
 icon: house
 ---
 
 # Introduction
 
-📚 DocBox reads class metadata and structured comments and outputs documentation in an HTML, JSON, or UML (diagram) format.
+📚 DocBox reads class metadata and structured comments and outputs documentation in an HTML, JSON, or UML (diagram) format.  You can see our live docs here: [https://s3.amazonaws.com/apidocs.ortussolutions.com/docbox/5.0.0/index.html](https://s3.amazonaws.com/apidocs.ortussolutions.com/docbox/5.0.0/index.html)
+
+<figure><img src=".gitbook/assets/docbox-dashboard.png" alt=""><figcaption></figcaption></figure>
 
 ## 💻 System Requirements
 
@@ -39,7 +42,7 @@ Apache 2 License: [http://www.apache.org/licenses/LICENSE-2.0](https://www.apach
 
 ## 💼 Professional Open Source <a href="#professional-open-source" id="professional-open-source"></a>
 
-![Ortus Solutions, Corp](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LA-UVvG0NM7NpDzssBL%2F-LA-Uaei0WzTH7Su5CR7%2F-LA-UqN1BRXynZ7RUVO7%2Fortussolutions\_button.png?generation=1523647999385555\&alt=media)
+![Ortus Solutions, Corp](https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LA-UVvG0NM7NpDzssBL%2F-LA-Uaei0WzTH7Su5CR7%2F-LA-UqN1BRXynZ7RUVO7%2Fortussolutions_button.png?generation=1523647999385555\&alt=media)
 
 DocBox is professional open source software backed by [Ortus Solutions, Corp](http://www.ortussolutions.com/services) offering services like:
 

@@ -1,18 +1,17 @@
 ---
 description: >-
-  DocBox is a JavaDoc-style documentation generator for your BoxLang and CFML Applications
-  codebase
+  DocBox is a JavaDoc-style documentation generator for your BoxLang and CFML Applications.
+icon: house
 ---
 
 # Introduction
 
-📚 DocBox reads component metadata and structured comments and outputs documentation in an HTML, JSON, or UML (diagram) format.
+📚 DocBox reads class metadata and structured comments and outputs documentation in an HTML, JSON, or UML (diagram) format.
 
 ## 💻 System Requirements
 
-* BoxLang 1.0+
-* Lucee 5+
-* Adobe ColdFusion 2023+
+* BoxLang 1.8+
+* Lucee 5+ / Adobe ColdFusion 2023+ (CFML Support)
 
 ## 🔢 Versioning <a href="#versioning" id="versioning"></a>
 

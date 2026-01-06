@@ -1,5 +1,6 @@
 ---
 description: A brief history in time of our major releases
+icon: rectangle-history
 ---
 
 # Release History

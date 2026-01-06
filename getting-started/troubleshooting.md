@@ -12,13 +12,17 @@ This guide covers common issues you might encounter when using DocBox and their 
 ### "Output directory does not exist"
 
 **Error Message:**
+
 ```
 The output directory [/path/to/docs] does not exist
 ```
 
-**Cause:** The specified output directory doesn't exist on the filesystem.
+**Cause:**
+The specified output directory doesn't exist on the filesystem.
 
 **Solution:**
+Create the output directory before running DocBox, or ensure that the path is correct. You can create it manually or programmatically:
+
 ```javascript
 // Option 1: Create the directory first
 directoryCreate( expandPath( "/docs" ), true );
@@ -34,6 +38,7 @@ new docbox.DocBox()
 ### Missing Source Mappings (CLI)
 
 **Error Message:**
+
 ```
 ❌ ERROR: No valid source mappings found.
 ```
@@ -42,6 +47,7 @@ new docbox.DocBox()
 
 **Solution:**
 Ensure you provide either:
+
 - `--source` and `--mapping` together
 - One or more `--mappings:<name>=<path>` options
 - JSON array via `--source`
@@ -59,15 +65,17 @@ boxlang module:docbox --mappings:app=/src --output-dir=/docs
 **Cause:** JavaScript error in HTML templates when filtering methods with missing properties.
 
 **Solution:** This was fixed in DocBox 5.0. Update to the latest version:
+
 ```bash
 box update docbox
 ```
 
-### Component Not Found
+### Class Not Found
 
 **Error Message:**
+
 ```
-Component [myapp.MyClass] not found
+Class [myapp.MyClass] not found
 ```
 
 **Cause:** The mapping specified doesn't match the actual package structure.
@@ -140,17 +148,17 @@ component {
 
 **Problem:** Generic type annotations like `Array<User>` not appearing in docs.
 
-**Cause:** Using standard `@returntype` instead of `@doc_generic`.
+**Cause:** Using standard `@returntype` instead of `@doc.type`.
 
 **Solution:**
-Use the `@doc_generic` annotation:
+Use the `@doc.type` annotation:
 
 ```javascript
 /**
  * Gets all active users
  *
  * @return Array of User objects
- * @doc_generic Array<User>
+ * @doc.type Array<User>
  */
 public array function getUsers() {
     return [];
@@ -179,6 +187,7 @@ box update docbox
 **Cause:** Browser localStorage might be disabled or cleared.
 
 **Solution:**
+
 1. Check browser console for localStorage errors
 2. Enable localStorage in browser settings
 3. Clear site data and try again
@@ -190,6 +199,7 @@ box update docbox
 **Cause:** JavaScript not loading or Alpine.js initialization issue.
 
 **Solution:**
+
 1. Check browser console for errors
 2. Ensure you're using a modern browser (Chrome, Firefox, Edge, Safari)
 3. Clear browser cache and reload
@@ -202,6 +212,7 @@ box update docbox
 **Cause:** Asset paths incorrect or theme not specified properly.
 
 **Solution:**
+
 ```javascript
 // Explicitly specify theme
 new docbox.DocBox()
@@ -217,6 +228,7 @@ new docbox.DocBox()
 ### CLI Command Not Found
 
 **Error Message:**
+
 ```
 Command [module:docbox] not found
 ```
@@ -224,6 +236,7 @@ Command [module:docbox] not found
 **Cause:** bx-docbox module not installed.
 
 **Solution:**
+
 ```bash
 # For CommandBox web runtimes
 box install bx-docbox
@@ -240,12 +253,15 @@ boxlang module:docbox --version
 **Problem:** DocBox runs out of memory when processing large projects.
 
 **Solution:**
-1. Increase JVM heap size:
+
+1. Increase JVM heap size
+
 ```bash
 box config set server.jvm.heapSize=1024
 ```
 
-2. Process in smaller chunks:
+1. Process in smaller chunks:
+
 ```javascript
 // Document modules separately
 new docbox.DocBox()
@@ -257,7 +273,8 @@ new docbox.DocBox()
     .generate( source: "/src/module2", mapping: "module2" );
 ```
 
-3. Use more aggressive exclusion patterns:
+1. Use more aggressive exclusion patterns:
+
 ```javascript
 excludes = "(tests|specs|build|node_modules|\.git|vendor)"
 ```
@@ -269,6 +286,7 @@ excludes = "(tests|specs|build|node_modules|\.git|vendor)"
 **Cause:** Processing too many files or infinite recursion in inheritance.
 
 **Solution:**
+
 1. Add verbose logging to see progress
 2. Check for circular dependencies in your code
 3. Exclude unnecessary directories
@@ -283,6 +301,7 @@ excludes = "(tests|specs|build|node_modules|\.git|vendor)"
 **Cause:** Module registration issue or conflicts.
 
 **Solution:**
+
 ```bash
 # Reinstall the module
 box uninstall bx-docbox
@@ -300,6 +319,7 @@ box reload
 
 **Solution:**
 DocBox 5.0+ automatically handles both formats. If you're on an older version:
+
 ```bash
 box update docbox
 ```
@@ -314,6 +334,7 @@ box update docbox
 
 **Solution:**
 Verify your paths and mappings:
+
 ```javascript
 new docbox.DocBox()
     .addStrategy( "JSON", {
@@ -333,6 +354,7 @@ new docbox.DocBox()
 **Cause:** Missing or invalid output file path.
 
 **Solution:**
+
 ```javascript
 new docbox.DocBox()
     .addStrategy( "XMI", {

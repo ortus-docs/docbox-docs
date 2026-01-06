@@ -1,3 +1,8 @@
+---
+description: Get started with the BoxLang CLI tool for generating documentation
+icon: terminal
+---
+
 # BoxLang CLI Tool
 
 🦤 DocBox 5.0+ includes a native BoxLang module with a powerful CLI tool for generating documentation directly from the command line.

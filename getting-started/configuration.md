@@ -1,3 +1,8 @@
+---
+description: Configure DocBox output formats and generation options
+icon: gear
+---
+
 # Configuration
 
 ## 📊 Supported Output Formats

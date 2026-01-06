@@ -1,3 +1,8 @@
+---
+description: Learn how to annotate your BoxLang or CFML code for DocBox documentation generation
+icon: pencil
+---
+
 # Annotating Your Code
 
 📝 DocBox reads your classes and creates documentation according to your objects, inheritance, implementations, functions, arguments, comments and metadata.  We try to follow the [JavaDoc](https://www.oracle.com/java/technologies/javase/javadoc-tool.html) style of annotations even though it is not 100% compatible yet.
@@ -187,27 +192,27 @@ Here are some blocks that ONLY DocBox can read:
 
 | Tag | Explanation |
 | :--- | :--- |
-| `@doc_generic` | This is an annotation that can be placed on either a function or argument declaration. This annotation is used to specify what generic type is being used, which is particularly useful when a return or argument type is an `array` or a `struct` or `any`.  The value can be a single type or a list. |
+| `@doc.type` | This is an annotation that can be placed on either a function or argument declaration. This annotation is used to specify what generic type is being used, which is particularly useful when a return or argument type is an `array` or a `struct` or `any`.  The value can be a single type or a list. |
 
 ```java
 /**
  * Get foo array
  *
- * @doc_generic com.Foo
+ * @doc.type com.Foo
  */
 private array function getFooArray(){
   return variables.foo;
 }
 
 // Inline
-private array function getFooArray() doc_generic="com.Foo"{
+private array function getFooArray() doc.type="com.Foo"{
   return variables.foo;
 }
 
 /**
  * Set my struct
  *
- * @myStruct.doc_generic uuid,string
+ * @myStruct.doc.type uuid,string
  */
 private void function setMyStruct( required struct myStruct ){
   instance.myStruct = arguments.myStruct;
@@ -215,7 +220,7 @@ private void function setMyStruct( required struct myStruct ){
 
 // Inline
 private void function setMyStruct(
-  required struct myStruct doc_generic="uuid,string"
+  required struct myStruct doc.type="uuid,string"
 ){
   instance.myStruct = arguments.myStruct;
 }
@@ -225,14 +230,14 @@ private void function setMyStruct(
 
 DocBox supports standard JavaDoc tags and recognizes custom annotations for enhanced documentation.
 
-### @doc_generic
+### @doc.type
 
-The `@doc_generic` annotation allows you to specify generic types for complex return types and arguments. This is especially useful for documenting collections and typed data structures.
+The `@doc.type` annotation allows you to specify generic types for complex return types and arguments. This is especially useful for documenting collections and typed data structures.
 
 **Syntax:**
 ```
-@doc_generic TypeName
-@doc_generic KeyType,ValueType
+@doc.type TypeName
+@doc.type KeyType,ValueType
 ```
 
 **Examples:**
@@ -246,7 +251,7 @@ Document arrays with specific element types:
  * Gets all active users from the database
  *
  * @return Array of User objects
- * @doc_generic Array<User>
+ * @doc.type Array<User>
  */
 public array function getActiveUsers() {
     return queryExecute( "SELECT * FROM users WHERE active = 1" )
@@ -263,7 +268,7 @@ Document structs with key/value types:
  * Gets user preferences as a configuration map
  *
  * @return Struct mapping setting names to values
- * @doc_generic Struct<String,Any>
+ * @doc.type Struct<String,Any>
  */
 public struct function getUserPreferences() {
     return {
@@ -283,7 +288,7 @@ Document typed parameters:
  * Processes a batch of user records
  *
  * @users Array of User objects to process
- * @users.doc_generic Array<User>
+ * @users.doc.type Array<User>
  */
 public void function processBatch( required array users ) {
     for ( var user in arguments.users ) {
@@ -299,7 +304,7 @@ Document complex struct parameters:
  * Updates user settings with validation
  *
  * @settings Map of setting names to their values
- * @settings.doc_generic Struct<String,Any>
+ * @settings.doc.type Struct<String,Any>
  */
 public void function updateSettings( required struct settings ) {
     validateSettings( arguments.settings );
@@ -309,17 +314,17 @@ public void function updateSettings( required struct settings ) {
 
 #### Inline Generic Annotations
 
-BoxLang also supports inline `doc_generic` attributes:
+BoxLang also supports inline `doc.type` attributes:
 
 ```java
 // Return type with inline generic
-public array function getUsers() doc_generic="Array<User>" {
+public array function getUsers() doc.type="Array<User>" {
     return entityLoad( "User" );
 }
 
 // Parameter with inline generic
 public void function setCache(
-    required struct cache doc_generic="String,Any"
+    required struct cache doc.type="String,Any"
 ) {
     variables.cache = arguments.cache;
 }
@@ -334,7 +339,7 @@ For nested or complex types:
  * Gets a map of user IDs to their roles
  *
  * @return Map of numeric user IDs to arrays of role names
- * @doc_generic Struct<Numeric,Array<String>>
+ * @doc.type Struct<Numeric,Array<String>>
  */
 public struct function getUserRoles() {
     return {
@@ -345,7 +350,7 @@ public struct function getUserRoles() {
 }
 ```
 
-### Best Practices for @doc_generic
+### Best Practices for @doc.type
 
 1. **Be Specific**: Use concrete types instead of generic "Any" when possible
 2. **Consistency**: Use the same naming convention throughout your codebase
@@ -359,6 +364,6 @@ public struct function getUserRoles() {
  * @return Nested structure containing report data
  * - Outer struct: Department name -> Department data
  * - Department data: Struct with "users" (Array<User>) and "metrics" (Struct<String,Numeric>)
- * @doc_generic Struct<String,Struct>
+ * @doc.type Struct<String,Struct>
  */
 ```

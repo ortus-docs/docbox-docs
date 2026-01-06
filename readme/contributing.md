@@ -1,3 +1,10 @@
+---
+description: >-
+    Learn how to contribute to the DocBox project by submitting pull requests,
+    reporting issues, and writing tests.
+icon: handshake
+---
+
 # Contributing
 
 🤝 There are several ways you can help in the development of DocBox!
